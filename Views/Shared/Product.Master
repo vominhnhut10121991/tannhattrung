@@ -1,0 +1,290 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../../Image/home/shortcut.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/font-awesome.min.css" rel="stylesheet">
+    <link href="../../Content/prettyPhoto.css" rel="stylesheet">
+    <link href="../../Content/price-range.css" rel="stylesheet">
+    <link href="../../Content/animate.css" rel="stylesheet">
+    <link href="../../Content/main.css" rel="stylesheet">
+    <link href="../../Content/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../Script/html5shiv.js"></script>
+    <script src="../../Script/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--/head-->
+<body>
+    <header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i><%= ThaiWood.ViewRes.TestString.String_MobileNumber %></a></li>
+								<li><a href=""><i class="fa fa-envelope"></i><%= ThaiWood.ViewRes.TestString.String_EmailSupport %></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                                <li><% Html.RenderPartial("CultureChooserUserControl"); %></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+                            <img src="../../Image/home/logo2.jpg" alt="" />                            
+                        </div>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><%= Html.ActionLink( ThaiWood.ViewRes.TestString.String_Home, "Index", "Home") %></li>
+								<li class="dropdown"><%= Html.ActionLink( ThaiWood.ViewRes.TestString.String_Product, "Index", "Product") %>
+                                    <ul role="menu" class="sub-menu">
+                                        <% foreach (System.Data.DataRow dr in ((ThaiWood.Models.MasterViewModel)ViewData["Master"]).ds.Tables["ProductCategory"].Rows)
+                                           { %>
+                                        <li><%= Html.ActionLink(dr[1].ToString(), "Category", "Product", new{ id = dr[0]}, null)%></li>
+                                        <%} %>
+                                    </ul>
+                                </li>
+                                <li><%= Html.ActionLink( ThaiWood.ViewRes.TestString.String_AboutUs, "AboutUs", "Home") %></li>
+								<li><%= Html.ActionLink( ThaiWood.ViewRes.TestString.String_ContactUs, "ContactUs", "Home") %></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">							
+                            <%= "<input type=\"text\" placeholder=\"" + ThaiWood.ViewRes.TestString.String_Search + "\"/>" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header>
+    <!--/header-->
+    <section id="advertisement">
+		<div class="container">
+			<img src="../../Image/home/advertisement.jpg" alt="" />
+		</div>
+	</section>
+    <section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2><%= ThaiWood.ViewRes.TestString.String_Category %></h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                        <% foreach (System.Data.DataRow dr in ((ThaiWood.Models.MasterViewModel)ViewData["Master"]).ds.Tables["ProductCategory"].Rows)
+                           { %>							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><%= Html.ActionLink(dr[1].ToString(), "Category", "Product", new{ id = dr[0]}, null)%></h4>
+								</div>
+							</div>
+                            <%} %>							
+						</div><!--/category-products-->
+					
+						<div class="brands_products"><!--brands_products-->
+							<h2><%= ThaiWood.ViewRes.TestString.String_Brand %></h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+                                <% foreach (System.Data.DataRow dr in ((ThaiWood.Models.MasterViewModel)ViewData["Master"]).ds.Tables["ProductBrand"].Rows)
+                                   { %>	
+									<li><span class="pull-right">(100)</span><%= Html.ActionLink(dr[1].ToString(), "Brand", "Product", new{ id = dr[0]}, null)%></li>
+                                    <%} %>
+									
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+						
+						<div class="price-range"><!--price-range-->
+							<h2><%= ThaiWood.ViewRes.TestString.String_PriceRange %></h2>
+							<div class="well">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b>$ 0</b> <b class="pull-right">$ 600</b>
+							</div>
+						</div><!--/price-range-->
+						
+						
+					</div>
+				</div>
+    
+<asp:ContentPlaceHolder ID="MainContent" runat="server">
+</asp:ContentPlaceHolder>
+
+    	    </div>
+	    </div>		
+	</section>
+    <section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span><%= ThaiWood.ViewRes.TestString.Name_Company %></span></h1>
+									<h2><%= ThaiWood.ViewRes.TestString.String_Description %></h2>
+									<p><%= ThaiWood.ViewRes.TestString.String_Slogan %></p>
+                                    <button type="button" class="btn btn-default get"><%= Html.ActionLink(ThaiWood.ViewRes.TestString.String_GetItNow, "Index", "Product") %></button>
+								</div>
+								<div class="col-sm-6">
+									<img src="../../Image/home/Banner1.jpg" class="girl img-responsive" alt="" />									
+								</div>
+							</div>
+                            <div class="item">
+								<div class="col-sm-6">
+									<h1><span><%= ThaiWood.ViewRes.TestString.Name_Company %></span></h1>
+									<h2><%= ThaiWood.ViewRes.TestString.String_Description %></h2>
+									<p><%= ThaiWood.ViewRes.TestString.String_Slogan %></p>									
+                                    <button type="button" class="btn btn-default get"><%= Html.ActionLink(ThaiWood.ViewRes.TestString.String_GetItNow, "Index", "Product") %></button>
+								</div>
+								<div class="col-sm-6">
+									<img src="../../Image/home/Banner2.jpg" class="girl img-responsive" alt="" />									
+								</div>
+							</div>
+                            <div class="item">
+								<div class="col-sm-6">
+									<h1><span><%= ThaiWood.ViewRes.TestString.Name_Company %></span></h1>
+									<h2><%= ThaiWood.ViewRes.TestString.String_Description %></h2>
+									<p><%= ThaiWood.ViewRes.TestString.String_Slogan %></p>									
+                                    <button type="button" class="btn btn-default get"><%= Html.ActionLink(ThaiWood.ViewRes.TestString.String_GetItNow, "Index", "Product") %></button>
+								</div>
+								<div class="col-sm-6">
+									<img src="../../Image/home/Banner3.jpg" class="girl img-responsive" alt="" />									
+								</div>
+							</div>
+                            <div class="item">
+                                <div class="col-sm-6">
+                                    <h1><span><%= ThaiWood.ViewRes.TestString.Name_Company %></span></h1>
+                                    <h2><%= ThaiWood.ViewRes.TestString.String_Description %></h2>
+                                    <p><%= ThaiWood.ViewRes.TestString.String_Slogan %></p>
+                                    <button type="button" class="btn btn-default get"><%= Html.ActionLink(ThaiWood.ViewRes.TestString.String_GetItNow, "Index", "Product") %></button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="../../Image/home/Banner4.jpg" class="girl img-responsive" alt="" />
+                                </div>
+                            </div>							
+						</div>
+
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+    <!--/slider-->
+    <footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="companyinfo">
+							<h2><span><%= ThaiWood.ViewRes.TestString.Name_Company %></span></h2>
+							<p><%= ThaiWood.ViewRes.TestString.String_Slogan %></p>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2><%= ThaiWood.ViewRes.TestString.String_Service %></h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href=""><%= ThaiWood.ViewRes.TestString.String_OnlineHelp %></a></li>
+								<li><a href=""><%= ThaiWood.ViewRes.TestString.String_ContactUs %></a></li>
+							</ul>
+						</div>
+					</div>					
+                    <div class="col-sm-3">
+						<div class="address">
+							<img src="../../Image/home/map.png" alt="" />
+							<p><%= ThaiWood.ViewRes.TestString.String_Address %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left"><%= ThaiWood.ViewRes.TestString.String_CopyRight + " " %></p>
+					<p class="pull-right"><%= ThaiWood.ViewRes.TestString.String_DesignBy + " " %><span><a target="" href="">nvo</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+    <!--/Footer-->
+    <script type="text/javascript" src="../../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../../Scripts/price-range.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="../../Scripts/main.js"></script>
+</body>
+</html>

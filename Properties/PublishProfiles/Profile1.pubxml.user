@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2016-03-27T12:38:27.3141136+07:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\vmadmin\Desktop\pub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/en/ThaiWood.resources.dll">
+      <publishTime>06/16/2016 14:17:04</publishTime>
+    </File>
+    <File Include="bin/ThaiWood.dll">
+      <publishTime>06/16/2016 14:17:04</publishTime>
+    </File>
+    <File Include="bin/ThaiWood.dll.config">
+      <publishTime>03/25/2016 15:29:22</publishTime>
+    </File>
+    <File Include="bin/vi/ThaiWood.resources.dll">
+      <publishTime>06/16/2016 14:17:04</publishTime>
+    </File>
+    <File Include="Content/animate.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/font-awesome.min.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/prettyPhoto.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/price-range.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Content/responsive.css">
+      <publishTime>03/02/2016 13:31:52</publishTime>
+    </File>
+    <File Include="Controllers/ApplicationController.cs">
+      <publishTime>03/04/2016 10:37:56</publishTime>
+    </File>
+    <File Include="Controllers/ErrorController.cs">
+      <publishTime>06/16/2016 13:27:04</publishTime>
+    </File>
+    <File Include="Controllers/HomeController.cs">
+      <publishTime>05/25/2016 13:20:35</publishTime>
+    </File>
+    <File Include="Controllers/ProductController.cs">
+      <publishTime>06/16/2016 13:50:26</publishTime>
+    </File>
+    <File Include="Data/Product.xls">
+      <publishTime>06/16/2016 14:12:27</publishTime>
+    </File>
+    <File Include="Data/ProductBrand.xls">
+      <publishTime>05/27/2016 14:45:58</publishTime>
+    </File>
+    <File Include="Data/ProductCategory.xls">
+      <publishTime>05/25/2016 13:22:23</publishTime>
+    </File>
+    <File Include="Data/Type.xls">
+      <publishTime>06/16/2016 14:03:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>03/02/2016 13:53:52</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>03/02/2016 13:53:52</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>03/02/2016 13:53:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/02/2016 13:53:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/02/2016 13:53:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+    <File Include="Global.asax.cs">
+      <publishTime>03/26/2016 13:58:28</publishTime>
+    </File>
+    <File Include="Image/404/404.png">
+      <publishTime>03/02/2016 13:32:45</publishTime>
+    </File>
+    <File Include="Image/home/AboutUs.jpg">
+      <publishTime>06/16/2016 14:16:52</publishTime>
+    </File>
+    <File Include="Image/home/advertisement.jpg">
+      <publishTime>03/08/2016 03:33:50</publishTime>
+    </File>
+    <File Include="Image/home/Banner1.jpg">
+      <publishTime>06/16/2016 13:49:04</publishTime>
+    </File>
+    <File Include="Image/home/Banner2.jpg">
+      <publishTime>06/16/2016 13:49:22</publishTime>
+    </File>
+    <File Include="Image/home/Banner3.jpg">
+      <publishTime>06/16/2016 13:49:37</publishTime>
+    </File>
+    <File Include="Image/home/Banner4.jpg">
+      <publishTime>06/16/2016 13:49:55</publishTime>
+    </File>
+    <File Include="Image/home/bg_border.png">
+      <publishTime>03/02/2016 13:32:46</publishTime>
+    </File>
+    <File Include="Image/home/logo2.jpg">
+      <publishTime>05/27/2016 14:43:20</publishTime>
+    </File>
+    <File Include="Image/home/map.png">
+      <publishTime>03/02/2016 13:32:46</publishTime>
+    </File>
+    <File Include="Image/home/searchicon.png">
+      <publishTime>03/02/2016 13:32:46</publishTime>
+    </File>
+    <File Include="Image/home/shortcut.png">
+      <publishTime>05/06/2009 18:49:18</publishTime>
+    </File>
+    <File Include="Image/Product/1.jpg">
+      <publishTime>06/16/2016 13:56:07</publishTime>
+    </File>
+    <File Include="Image/Product/10.jpg">
+      <publishTime>06/16/2016 13:58:07</publishTime>
+    </File>
+    <File Include="Image/Product/11.jpg">
+      <publishTime>06/16/2016 13:58:18</publishTime>
+    </File>
+    <File Include="Image/Product/12.jpg">
+      <publishTime>06/16/2016 13:58:29</publishTime>
+    </File>
+    <File Include="Image/Product/13.jpg">
+      <publishTime>06/16/2016 13:58:50</publishTime>
+    </File>
+    <File Include="Image/Product/14.jpg">
+      <publishTime>06/16/2016 13:59:01</publishTime>
+    </File>
+    <File Include="Image/Product/15.jpg">
+      <publishTime>06/16/2016 13:59:10</publishTime>
+    </File>
+    <File Include="Image/Product/16.jpg">
+      <publishTime>06/16/2016 13:59:19</publishTime>
+    </File>
+    <File Include="Image/Product/17.jpg">
+      <publishTime>06/16/2016 13:59:28</publishTime>
+    </File>
+    <File Include="Image/Product/18.jpg">
+      <publishTime>06/16/2016 13:59:37</publishTime>
+    </File>
+    <File Include="Image/Product/19.jpg">
+      <publishTime>06/16/2016 13:59:50</publishTime>
+    </File>
+    <File Include="Image/Product/2.jpg">
+      <publishTime>06/16/2016 13:56:21</publishTime>
+    </File>
+    <File Include="Image/Product/20.jpg">
+      <publishTime>06/16/2016 14:00:00</publishTime>
+    </File>
+    <File Include="Image/Product/21.jpg">
+      <publishTime>06/16/2016 14:00:13</publishTime>
+    </File>
+    <File Include="Image/Product/22.jpg">
+      <publishTime>06/16/2016 14:00:21</publishTime>
+    </File>
+    <File Include="Image/Product/23.jpg">
+      <publishTime>06/16/2016 14:09:39</publishTime>
+    </File>
+    <File Include="Image/Product/24.jpg">
+      <publishTime>06/16/2016 14:09:49</publishTime>
+    </File>
+    <File Include="Image/Product/25.jpg">
+      <publishTime>06/16/2016 14:10:00</publishTime>
+    </File>
+    <File Include="Image/Product/26.jpg">
+      <publishTime>06/16/2016 14:10:09</publishTime>
+    </File>
+    <File Include="Image/Product/27.jpg">
+      <publishTime>06/16/2016 14:10:18</publishTime>
+    </File>
+    <File Include="Image/Product/3.jpg">
+      <publishTime>06/16/2016 13:56:33</publishTime>
+    </File>
+    <File Include="Image/Product/4.jpg">
+      <publishTime>06/16/2016 13:56:58</publishTime>
+    </File>
+    <File Include="Image/Product/5.jpg">
+      <publishTime>06/16/2016 13:57:12</publishTime>
+    </File>
+    <File Include="Image/Product/6.jpg">
+      <publishTime>06/16/2016 13:57:26</publishTime>
+    </File>
+    <File Include="Image/Product/7.jpg">
+      <publishTime>06/16/2016 13:57:37</publishTime>
+    </File>
+    <File Include="Image/Product/8.jpg">
+      <publishTime>06/16/2016 13:57:48</publishTime>
+    </File>
+    <File Include="Image/Product/9.jpg">
+      <publishTime>06/16/2016 13:57:58</publishTime>
+    </File>
+    <File Include="Models/ProductModel.cs">
+      <publishTime>06/16/2016 13:28:46</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/Profile1.pubxml">
+      <publishTime>05/27/2016 14:46:53</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/Profile1.pubxml.user">
+      <publishTime>05/27/2016 15:06:01</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/contact.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/gmaps.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/html5shiv.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.prettyPhoto.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.scrollUp.min.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="Scripts/price-range.js">
+      <publishTime>03/02/2016 13:41:04</publishTime>
+    </File>
+    <File Include="ThaiWood.csproj">
+      <publishTime>06/16/2016 14:17:03</publishTime>
+    </File>
+    <File Include="ThaiWood.csproj.user">
+      <publishTime>06/16/2016 14:17:03</publishTime>
+    </File>
+    <File Include="ThaiWood.Publish.xml">
+      <publishTime>03/27/2016 12:38:27</publishTime>
+    </File>
+    <File Include="ViewRes/TestString.Designer.cs">
+      <publishTime>05/27/2016 14:33:12</publishTime>
+    </File>
+    <File Include="ViewRes/TestString.en.resx">
+      <publishTime>05/27/2016 14:33:03</publishTime>
+    </File>
+    <File Include="ViewRes/TestString.resx">
+      <publishTime>05/27/2016 14:33:12</publishTime>
+    </File>
+    <File Include="ViewRes/TestString.vi.Designer.cs">
+      <publishTime>05/27/2016 14:32:33</publishTime>
+    </File>
+    <File Include="ViewRes/TestString.vi.resx">
+      <publishTime>05/27/2016 14:32:33</publishTime>
+    </File>
+    <File Include="Views/Error/Index.aspx">
+      <publishTime>03/25/2016 15:03:56</publishTime>
+    </File>
+    <File Include="Views/Home/AboutUs.aspx">
+      <publishTime>06/16/2016 13:55:15</publishTime>
+    </File>
+    <File Include="Views/Home/ContactUs.aspx">
+      <publishTime>03/08/2016 09:36:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.aspx">
+      <publishTime>03/08/2016 16:35:53</publishTime>
+    </File>
+    <File Include="Views/Product/Detail.aspx">
+      <publishTime>05/25/2016 13:16:54</publishTime>
+    </File>
+    <File Include="Views/Product/Index.aspx">
+      <publishTime>06/16/2016 14:14:44</publishTime>
+    </File>
+    <File Include="Views/Shared/CultureChooserUserControl.ascx">
+      <publishTime>03/08/2016 01:19:23</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.aspx">
+      <publishTime>03/25/2016 15:22:45</publishTime>
+    </File>
+    <File Include="Views/Shared/Home.Master">
+      <publishTime>06/16/2016 13:50:45</publishTime>
+    </File>
+    <File Include="Views/Shared/LogOnUserControl.ascx">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+    <File Include="Views/Shared/Product.Master">
+      <publishTime>06/16/2016 14:02:06</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/16/2016 14:15:16</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>03/01/2016 14:57:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F204F44-2C09-46FD-AA09-9060E8407CD0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThaiWood</RootNamespace>
+    <AssemblyName>ThaiWood</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DesktopBuildPackageLocation>..\..\..\..\..\Desktop\ThaiWood.zip</DesktopBuildPackageLocation>
+    <PublishDatabases>true</PublishDatabases>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewRes\TestString.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestString.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRes\TestString.vi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestString.vi.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\prettyPhoto.css" />
+    <Content Include="Content\price-range.css" />
+    <Content Include="Content\responsive.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\404\404.png" />
+    <Content Include="Image\home\AboutUs.jpg" />
+    <Content Include="Image\home\advertisement.jpg" />
+    <Content Include="Image\home\Banner1.jpg" />
+    <Content Include="Image\home\Banner2.jpg" />
+    <Content Include="Image\home\Banner3.jpg" />
+    <Content Include="Image\home\bg_border.png" />
+    <Content Include="Image\home\logo2.jpg" />
+    <Content Include="Image\home\map.png" />
+    <Content Include="Image\home\searchicon.png" />
+    <Content Include="Image\home\shortcut.png" />
+    <Content Include="Image\Product\1.jpg" />
+    <Content Include="Image\Product\10.jpg" />
+    <Content Include="Image\Product\11.jpg" />
+    <Content Include="Image\Product\12.jpg" />
+    <Content Include="Image\Product\13.jpg" />
+    <Content Include="Image\Product\14.jpg" />
+    <Content Include="Image\Product\15.jpg" />
+    <Content Include="Image\Product\16.jpg" />
+    <Content Include="Image\Product\17.jpg" />
+    <Content Include="Image\Product\18.jpg" />
+    <Content Include="Image\Product\19.jpg" />
+    <Content Include="Image\Product\2.jpg" />
+    <Content Include="Image\Product\20.jpg" />
+    <Content Include="Image\Product\21.jpg" />
+    <Content Include="Image\Product\22.jpg" />
+    <Content Include="Image\Product\23.jpg" />
+    <Content Include="Image\Product\24.jpg" />
+    <Content Include="Image\Product\25.jpg" />
+    <Content Include="Image\Product\26.jpg" />
+    <Content Include="Image\Product\27.jpg" />
+    <Content Include="Image\Product\3.jpg" />
+    <Content Include="Image\Product\4.jpg" />
+    <Content Include="Image\Product\5.jpg" />
+    <Content Include="Image\Product\6.jpg" />
+    <Content Include="Image\Product\7.jpg" />
+    <Content Include="Image\Product\8.jpg" />
+    <Content Include="Image\Product\9.jpg" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\contact.js" />
+    <Content Include="Scripts\gmaps.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.scrollUp.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\price-range.js" />
+    <Content Include="Views\Error\Index.aspx" />
+    <Content Include="Views\Home\AboutUs.aspx" />
+    <Content Include="Views\Home\ContactUs.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Product\Detail.aspx" />
+    <Content Include="Views\Product\Index.aspx" />
+    <Content Include="Views\Shared\CultureChooserUserControl.ascx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Image\shop\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Product.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Product.xls" />
+    <Content Include="Data\ProductBrand.xls" />
+    <Content Include="Data\ProductCategory.xls" />
+    <Content Include="Data\Type.xls" />
+    <None Include="fonts\fontawesome-webfont.svg" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\Shared\Home.Master" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewRes\TestString.en.resx" />
+    <EmbeddedResource Include="ViewRes\TestString.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestString.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRes\TestString.vi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestString.vi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52417</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
